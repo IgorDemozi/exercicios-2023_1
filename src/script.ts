@@ -291,13 +291,13 @@
 
       $nova_div.classList.add('card');
       $nova_div.innerHTML = `
-            <img src="${carro.imagem}">
-            <p>Marca: <b>${carro.marca}</b></p>
-            <p>Modelo: <u><b>${carro.modelo}</b></u></p>
-            <p>Preço: <u><b>${mascararPreco(carro.preco)}</b></u></p>
-            <p>Ano: ${carro.ano}</p>
-            <p>Quilometragem: ${mascaraKM} KM</p>
-            <p>Tipo de combustível: ${carro.combustivel}</p>
+         <img src="${carro.imagem}">
+         <p>Marca: <b>${carro.marca}</b></p>
+         <p>Modelo: <u><b>${carro.modelo}</b></u></p>
+         <p>Preço: <u><b>${mascararPreco(carro.preco)}</b></u></p>
+         <p>Ano: ${carro.ano}</p>
+         <p>Quilometragem: ${mascaraKM} KM</p>
+         <p>Tipo de combustível: ${carro.combustivel}</p>
       `;
 
       if (carroSelecionado) {

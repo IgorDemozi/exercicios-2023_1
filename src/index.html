@@ -16,20 +16,6 @@
       <section>
          <input id="input" placeholder="Pesquise por marca ou modelo">
 
-         <select id="select_marca">
-            <option value="">Marca</option>
-         </select>
-
-         <select id="select_ano_minimo">
-            <option value="">Selecione</option>
-         </select>
-
-         <select id="select_ano_maximo">
-            <option value="">Selecione</option>
-         </select>
-      </section>
-
-      <section class="container">
          <input id="input_preco_minimo" type="number" placeholder="Preço mínimo">
          <input id="input_preco_maximo" type="number" placeholder="Preço máximo">
 
@@ -37,18 +23,21 @@
          <input id="input_km_maximo" type="number" placeholder="Quilometragem máxima">
       </section>
 
-      <section class="container">
+      <section>
+         <select id="select_ano_minimo">
+            <option value="">Selecione</option>
+         </select>
+         <select id="select_ano_maximo">
+            <option value="">Selecione</option>
+         </select>
+
+         <select id="select_marca">
+            <option value="">Marca</option>
+         </select>
+
          <select id="select_combustiveis">
             <option value="">Tipo de combustível</option>
          </select>
-
-         <div id="div_checkbox">
-            <label style="cursor: pointer;">
-               <input id="checkbox_carros_novos" type="checkbox"> Apenas carros novos
-            </label>
-         </div>
-
-         <p id="resultados_da_pesquisa"></p>
 
          <select id="select_ordenar_lista">
             <option value="">Ordenar lista</option>
@@ -60,12 +49,19 @@
          </select>
       </section>
 
-      <section class="container">
+      <section>
+         <div id="div_checkbox">
+            <label style="cursor: pointer;">
+               <input id="checkbox_carros_novos" type="checkbox"> Apenas carros novos
+            </label>
+         </div>
+
          <button id="button_media">Calcular média de preços</button>
          <button id="button_ano">Ano com mais carros</button>
       </section>
 
-      <section class="container">
+      <section>
+         <p id="resultados_da_pesquisa"></p>
          <p id="carros_selecionados"></p>
          <p id="carros_selecionados_valor_total">Valor total: R$ 0,00</p>
          <p id="carros_selecionados_media_de_anos">Média dos anos: 0</p>

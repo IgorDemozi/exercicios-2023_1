@@ -10,21 +10,19 @@ body {
 }
 
 header {
-   margin-bottom: 1rem;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
-}
-header section {
    display: flex;
    flex-wrap: wrap;
    align-items: center;
-   justify-content: center;
+   justify-content: space-around;
+   gap: 1rem;
+}
+header section {
+   display: flex;
    flex-direction: column;
+   height: fit-content;
    border: 1px solid rgb(105, 105, 105);
    padding: 4px;
    gap: 8px;
-   margin: 8px;
 }
 
 #div_checkbox {
@@ -39,13 +37,13 @@ header section {
 #main_div {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
-   gap: 30px;
-   margin-bottom: 1rem;
+   gap: 1.5rem;
+   margin: 1rem 0;
 }
 
 .card {
    border: 1px solid black;
-   padding: 4px;
+   padding: 0.25rem;
    background-color: rgb(224, 224, 224);
 }
 .card:hover {
@@ -71,20 +69,17 @@ footer {
    padding: 0.5rem;
 }
 #relogio {
-   font-size: 6rem;
+   font-size: 6.6rem;
    color: red;
-}
-#carro_em_promocao {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
 }
 #texto_promocao {
    font-size: 2rem;
    color: darkorange;
-   width: 230px;
+   width: 300px;
 }
 #carro_em_promocao {
+   display: flex;
+   flex-direction: column;
    font-size: 1.6rem;
 }
 
