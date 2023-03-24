@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html lang="pt-br">
+
+<head>
+   <title>Revenda de carros</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="index.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <header>
+      <section>
+         <input id="input" placeholder="Pesquise por marca ou modelo">
+
+         <select id="select_marca">
+            <option value="">Marca</option>
+         </select>
+
+         <select id="select_ano_minimo">
+            <option value="">Selecione</option>
+         </select>
+
+         <select id="select_ano_maximo">
+            <option value="">Selecione</option>
+         </select>
+      </section>
+
+      <section class="container">
+         <input id="input_preco_minimo" type="number" placeholder="Preço mínimo">
+         <input id="input_preco_maximo" type="number" placeholder="Preço máximo">
+
+         <input id="input_km_minimo" type="number" placeholder="Quilometragem mínima">
+         <input id="input_km_maximo" type="number" placeholder="Quilometragem máxima">
+      </section>
+
+      <section class="container">
+         <select id="select_combustiveis">
+            <option value="">Tipo de combustível</option>
+         </select>
+
+         <div id="div_checkbox">
+            <label style="cursor: pointer;">
+               <input id="checkbox_carros_novos" type="checkbox"> Apenas carros novos
+            </label>
+         </div>
+
+         <p id="resultados_da_pesquisa"></p>
+
+         <select id="select_ordenar_lista">
+            <option value="">Ordenar lista</option>
+            <option value="marca">Marca</option>
+            <option value="modelo">Modelo</option>
+            <option value="preço">Preço</option>
+            <option value="ano">Ano</option>
+            <option value="km">Quilometragem</option>
+         </select>
+      </section>
+
+      <section class="container">
+         <button id="button_media">Calcular média de preços</button>
+         <button id="button_ano">Ano com mais carros</button>
+      </section>
+
+      <section class="container">
+         <p id="carros_selecionados"></p>
+         <p id="carros_selecionados_valor_total">Valor total: R$ 0,00</p>
+         <p id="carros_selecionados_media_de_anos">Média dos anos: 0</p>
+         <p id="carros_selecionados_desvio_padrao_km">Desvio padrão da quilometragem: 0 KM</p>
+      </section>
+   </header>
+
+   <main>
+      <div id="main_div"></div>
+   </main>
+
+   <footer>
+      <b>
+         <p id="relogio"></p>
+      </b>
+
+      <b>
+         <p id="texto_promocao">NÃO PERCA ESTA PROMOÇÃO</p>
+      </b>
+
+      <div id="carro_em_promocao"></div>
+   </footer>
+
+   <script src="../out/script.js"></script>
+</body>
+
+</html>
