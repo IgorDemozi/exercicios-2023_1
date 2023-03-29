@@ -3,6 +3,6 @@
       "noImplicitAny": true,
       "target": "ESNext",
       "strict": true,
-      "outDir": "out"
+      "outDir": "out",
    }
 }
