@@ -4,5 +4,8 @@
    },
    "scripts": {
       "build": "tsc"
+   },
+   "dependencies": {
+      "tailwindcss": "^3.3.0"
    }
 }

@@ -1,4 +1,4 @@
-export type carro = {
+export type Carro = {
    marca: string;
    modelo: string;
    ano: number;
@@ -9,7 +9,7 @@ export type carro = {
    imagem: string;
 };
 
-export const listaDeCarros: carro[] = [
+export const listaDeCarros: Carro[] = [
    {
       marca: 'Toyota',
       modelo: 'Corolla',

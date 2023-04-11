@@ -1,12 +1,12 @@
 export const $main_div: HTMLDivElement = document.querySelector('#main_div') as HTMLDivElement;
 export const $input: HTMLInputElement = document.querySelector('#input') as HTMLInputElement;
 export const $select_marca: HTMLSelectElement = document.querySelector('#select_marca') as HTMLSelectElement;
-export const $select_ano_minimo: HTMLSelectElement = document.querySelector('#select_ano_minimo') as HTMLSelectElement;
-export const $select_ano_maximo: HTMLSelectElement = document.querySelector('#select_ano_maximo') as HTMLSelectElement;
-export const $input_preco_minimo: HTMLInputElement = document.querySelector('#input_preco_minimo') as HTMLInputElement;
-export const $input_preco_maximo: HTMLInputElement = document.querySelector('#input_preco_maximo') as HTMLInputElement;
-export const $input_km_minimo: HTMLInputElement = document.querySelector('#input_km_minimo') as HTMLInputElement;
-export const $input_km_maximo: HTMLInputElement = document.querySelector('#input_km_maximo') as HTMLInputElement;
+export const $select_ano_min: HTMLSelectElement = document.querySelector('#select_ano_min') as HTMLSelectElement;
+export const $select_ano_max: HTMLSelectElement = document.querySelector('#select_ano_max') as HTMLSelectElement;
+export const $input_preco_min: HTMLInputElement = document.querySelector('#input_preco_min') as HTMLInputElement;
+export const $input_preco_max: HTMLInputElement = document.querySelector('#input_preco_max') as HTMLInputElement;
+export const $input_km_min: HTMLInputElement = document.querySelector('#input_km_min') as HTMLInputElement;
+export const $input_km_max: HTMLInputElement = document.querySelector('#input_km_max') as HTMLInputElement;
 export const $select_combustiveis: HTMLSelectElement = document.querySelector(
    '#select_combustiveis'
 ) as HTMLSelectElement;

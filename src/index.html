@@ -3,43 +3,40 @@
 <html lang="pt-br">
 
 <head>
+   <!-- class="w-full max-h-48 bg-yellow-500 hover:bg-yellow-200" -->
    <title>Revenda de carros</title>
    <meta charset="utf-8">
-   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="../dist/output.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
-<body>
-   <header>
-      <section>
-         <input id="input" placeholder="Pesquise por marca ou modelo">
+<body class="p-4 bg-gray-200">
+   <header class="flex flex-wrap justify-around items-center gap-4">
+      <section class="border-black border-2 flex flex-col gap-2 p-1 bg-white rounded">
+         <input id="input" class="border border-gray-500 rounded px-1" placeholder="Pesquise: marca/modelo">
 
-         <input id="input_preco_minimo" type="number" placeholder="Preço mínimo">
-         <input id="input_preco_maximo" type="number" placeholder="Preço máximo">
+         <input id="input_preco_min" class="border border-gray-500 rounded px-1" type="number" placeholder="Preço mínimo">
+         <input id="input_preco_max" class="border border-gray-500 rounded px-1" type="number" placeholder="Preço máximo">
 
-         <input id="input_km_minimo" type="number" placeholder="Quilometragem mínima">
-         <input id="input_km_maximo" type="number" placeholder="Quilometragem máxima">
+         <input id="input_km_min" class="border border-gray-500 rounded px-1" type="number" placeholder="Quilometragem mínima">
+         <input id="input_km_max" class="border border-gray-500 rounded px-1" type="number" placeholder="Quilometragem máxima">
       </section>
 
-      <section>
-         <select id="select_ano_minimo">
-            <option value="">Selecione</option>
-         </select>
-         <select id="select_ano_maximo">
-            <option value="">Selecione</option>
-         </select>
+      <section class="border-black border-2 flex flex-col gap-2 p-1 bg-white rounded">
+         <select id="select_ano_min" class="border border-gray-500 rounded px-1"></select>
+         <select id="select_ano_max" class="border border-gray-500 rounded px-1"></select>
 
-         <select id="select_marca">
+         <select id="select_marca" class="border border-gray-500 rounded px-1">
             <option value="">Marca</option>
          </select>
 
-         <select id="select_combustiveis">
+         <select id="select_combustiveis" class="border border-gray-500 rounded px-1">
             <option value="">Tipo de combustível</option>
          </select>
 
-         <select id="select_ordenar_lista">
+         <select id="select_ordenar_lista" class="border border-gray-500 rounded px-1">
             <option value="">Ordenar lista</option>
             <option value="marca">Marca</option>
             <option value="modelo">Modelo</option>
@@ -49,18 +46,18 @@
          </select>
       </section>
 
-      <section>
-         <div id="div_checkbox">
-            <label style="cursor: pointer;">
+      <section class="border-black border-2 flex flex-col gap-2 p-1 bg-white rounded">
+         <div id="div_checkbox" class="self-center">
+            <label class="hover:cursor-pointer">
                <input id="checkbox_carros_novos" type="checkbox"> Apenas carros novos
             </label>
          </div>
 
-         <button id="button_media">Calcular média de preços</button>
-         <button id="button_ano">Ano com mais carros</button>
+         <button id="button_media" class="bg-gray-400 py-2 px-4 rounded hover:bg-yellow-300 hover:ring-2 hover:ring-black hover:ring-inset">Calcular média de preços</button>
+         <button id="button_ano" class="bg-gray-400 py-2 px-4 rounded hover:bg-yellow-300 hover:ring-2 hover:ring-black hover:ring-inset">Ano com mais carros</button>
       </section>
 
-      <section>
+      <section class="border-black border-2 flex flex-col gap-2 p-1 bg-white rounded">
          <p id="resultados_da_pesquisa"></p>
          <p id="carros_selecionados"></p>
          <p id="carros_selecionados_valor_total">Valor total: R$ 0,00</p>
@@ -70,19 +67,19 @@
    </header>
 
    <main>
-      <div id="main_div"></div>
+      <div id="main_div" class="my-4 gap-4 grid grid-cols-1 xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2"></div>
    </main>
 
-   <footer>
+   <footer class="border-black border-2 bg-white flex flex-wrap justify-around items-center gap-4">
       <b>
-         <p id="relogio"></p>
+         <p id="relogio" class="text-red-500 text-8xl"></p>
       </b>
 
       <b>
-         <p id="texto_promocao">NÃO PERCA ESTA PROMOÇÃO</p>
+         <p id="texto_promocao" class="text-4xl text-orange-400 w-64">NÃO PERCA ESTA PROMOÇÃO</p>
       </b>
 
-      <div id="carro_em_promocao"></div>
+      <div id="carro_em_promocao" class="text-2xl flex flex-col"></div>
    </footer>
 
    <script src="../out/script.js" type="module"></script>
